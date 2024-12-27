@@ -98,3 +98,49 @@ nav{
     top: -11px;
     left: 4px;
 }
+.loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: all ease 2s;
+
+}
+.loader h1{
+    color: transparent;
+    background: linear-gradient(to right,orange,orangered);
+    background-clip: text;
+    position: absolute;
+    font-size: 6vw;
+    font-style: italic;
+    opacity: 0;
+    animation: load 1s linear 0.5s ;
+}
+.loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+.loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
