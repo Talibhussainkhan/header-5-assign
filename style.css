@@ -117,7 +117,6 @@ nav{
     background-clip: text;
     position: absolute;
     font-size: 6vw;
-    font-style: italic;
     opacity: 0;
     animation: load 1s linear 0.5s ;
 }
